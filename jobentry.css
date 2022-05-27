@@ -1,0 +1,88 @@
+body{
+    
+    margin:0;
+    padding:0;
+    font-family: "helvetica";
+}
+
+input[type="text"]{
+    padding:10px;
+    width:250px;
+    }
+
+input[type="date"]{
+    padding:10px;
+    width:250px;
+    }
+
+input[type="password"]{
+    padding:10px;
+    width:250px;
+    }
+
+select{
+    padding:10px;
+    width:250px;
+    }
+
+textarea{
+    padding:25px;
+    width:550px;
+    }
+
+.entrybox input[type="submit"]{
+    border: 1px solid #062a42;
+    background: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "helvetica";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.entrybox input[type="reset"]{
+    border: 1px solid #062a42;
+    background: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "helvetica";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.entrybox input[type="submit"] , .entrybox input[type="reset"] {
+    color: #062a42;
+}
+
+.entrybox input[type="submit"]:hover , .entrybox input[type="reset"]:hover {
+    color: rgb(139, 147, 148);
+}
+
+
+.entrybox input[type="submit"]::before , .entrybox input[type="reset"]::before{
+    content:"";
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 0%;
+    background: #062a42;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+.entrybox input[type="submit"]::before , .entrybox input[type="reset"]::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.entrybox input[type="submit"]:hover::before,.entrybox input[type="reset"]:hover::before{
+    height: 180%;
+}
+

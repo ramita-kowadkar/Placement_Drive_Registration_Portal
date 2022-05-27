@@ -1,0 +1,97 @@
+<html lang="en" dir="ltr">
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui￾lightness/jquery-ui.css' rel='stylesheet'>
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <head>
+        
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <style type="text/css">
+            body{
+                background-image: url(screen.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .content{
+                background: white;
+                width:50%;
+                padding: 40px;
+                margin: 100px auto;
+            }
+        </style>
+        <meta charset="utf-8">
+        <tiltle></tiltle>
+        <link rel="stylesheet" href="jobentry.css">
+
+    </head>
+
+    <body>
+        <div class="entrybox">
+            <br><br>
+            <br>
+            <h1 align="center"> Job Details </h1>
+            <form action="save.php" method="post">
+                <table border="10" width=70% cellspacing="10" cellpadding="5" align="center" bgcolor= #DCDCDC>
+                    <font size="6px">
+                    <tr>
+                        <td><p><strong>Name of the Company</strong></p></td>
+                        <td><input type="text" name="name" placeholder="Enter company name" maxlength="25"></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><strong>Branch Eligible</strong></p></td>
+                        <td>    
+                            <select id="branch" name="branch" >
+                                <option value=""></option>
+                                <option value="CSE">CSE</option>
+                                <option value="ISE">ISE</option>
+                                <option value="EnC">ECE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="ME">ME</option>
+                                <option value="Civil">CIVIL</option>
+                                <option value="AE">AE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><p><strong>Job Description</strong></p></td>
+                        <td><textarea name="jdesc" placeholder="" cols="45" rows="5"></textarea></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><p><strong>CTC</strong></p></td>
+                        <td><input type="text" name="ctc" placeholder="CTC"></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><strong>Drive Date</strong></p></td>
+                        <td>
+                            <input type="date" class="form-control" id="my_date_picker" width="250px" name="date">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><p><strong>Minimum CGPA</strong></p></td>
+                        <td>
+                            <input type="text" class="form-control" id="my_date_picker" width="250px" name="cgpa">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="save" value="Save" id="save">
+                            <input type="reset" name="" value="Reset" id="reset"></td>
+                    </tr>
+                    
+                </font>
+                </table>
+                
+            </form>
+        </div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery￾ui.min.js" ></script>
+
+</html>

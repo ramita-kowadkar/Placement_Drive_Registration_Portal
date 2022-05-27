@@ -1,0 +1,95 @@
+<html lang="en" dir="ltr">
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui￾lightness/jquery-ui.css' rel='stylesheet'>
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <head>
+        <style type="text/css">
+            body{
+                background-image: url(screen.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .content{
+                background: white;
+                width:50%;
+                padding: 40px;
+                margin: 100px auto;
+            }
+        </style>
+        <meta charset="utf-8">
+        <tiltle></tiltle>
+        <link rel="stylesheet" href="jobentry.css">
+
+    </head>
+
+    <body>
+        <div class="entrybox">
+            <br><br><br><br><br>
+            <h1 align="center"> Student Details </h1>
+            <form action="connect.php" method="post">
+                <table border="10" width=70% cellspacing="10" cellpadding="5" align="center" bgcolor= #DCDCDC>
+                    <tr>
+                        <td><p><strong>Name</strong></p></td>
+                        <td><input type="text" name="name" placeholder="Enter student name"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><p><strong>USN</strong></p></td>
+                        <td><input type="text" name="usn" placeholder="USN"></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><strong>Branch</strong></p></td>
+                        <td>    
+                            <select id="branch" name="branch" >
+                                <option value=""></option>
+                                <option value="CSE">CSE</option>
+                                <option value="ISE">ISE</option>
+                                <option value="EnC">ECE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="ME">ME</option>
+                                <option value="Civil">Civil</option>
+                                <option value="AE">AE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><p><strong>10th percentage</strong></p></td>
+                        <td><input type="text" name="sslc" placeholder="SSLC"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><p><strong>PUC</strong></p></td>
+                        <td><input type="text" name="puc" placeholder="PUC"></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><strong>CGPA</strong></p></td>
+                        <td><input type="text" name="cgpa" placeholder="CGPA"></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><strong>Username</strong></p></td>
+                        <td><input type="text" name="user" placeholder="Username"></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><strong>Password</strong></p></td>
+                        <td><input type="password" name="pass" placeholder="Password"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" name="save" value="Save">
+                            <input type="reset" name="reset" value="Reset">
+                        </td>
+                    </tr>
+                    
+
+                </table>
+                
+            </form>
+        </div>
+    </body>
+
+</html>
